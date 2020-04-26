@@ -2,14 +2,21 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  /* background-image: url("../assets/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; */
+}
+
+.home-body {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-image: url("../assets/img/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%; */
+}
+.grid-container {
+  max-width: 980px;
+  margin: auto;
 }
 
 a {
@@ -50,8 +57,12 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90px;
+}
+
+.nav-home {
   background-color: #0d0d0d;
 }
+
 nav .nav-logo-container {
   margin-left: 50px;
   align-self: center;
@@ -134,3 +145,157 @@ main .buttom-hero button:hover {
 main .buttom-hero button a {
   color: white;
 }
+/*---------------Estos son los estilos de blogs---------------*/
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: #e6e9ed;
+  padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+main section .blogs-main-new h2 {
+  color: #18b0b0;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+  width: 85%;
+}
+
+.blogs-news-info-container {
+  grid column: 2;
+}
+
+.blogs-news-info-container p {
+  margin-bottom: 35px;
+}
+
+.blogs-posts-container {
+  padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blogs-button {
+  border: 1px solid #18b0b0;
+  color: White;
+  background-color: #18b0b0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.blogs-button:hover {
+  background-color: #0e6969;
+  transform: scale(1.1);
+}
+/*------------Estilos del Articule------------*/
+.blogs-posts-container .post-container {
+  display: inline-block;
+  padding-left: 10px;
+  max-width: 30%;
+  margin-bottom: 50px;
+}
+.blogs-posts-container .post-container p {
+  margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+  width: 100%;
+}
+/*------------Estilos del Articule------------*/
+/*------------Estilos del Footer------------*/
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #0d0d0d;
+  border-top: 35px solid #18b0b0;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin-top: 30px;
+}
+/*------------Estilos del Footer------------*/
+/*---------------Estos son los estilos de blogs---------------*/
+/*---------------Estos son los estilos de blogpost---------------*/
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+.blogpost-img-container img {
+  width: 100%;
+}
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+}
+.blogpost-main-container article h1 {
+  font-size: 35px;
+}
+
+.contact-main-container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #e6e9ed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact-main-container div {
+display:inline-block;
+width: 49.5%;
+height: 100%;
+}
+
+.contact-main-container div .contact-left a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+} 
+
+.contact-main-container div .contact-left a:hover {
+  transform: scale(1.1);
+  border-radius: 4px;
+  background-color: #5ed1d1;
+}
+
+.contact-main-container div .contact-right a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+} 
+
+.contact-main-container div .contact-right a:hover {
+  transform: scale(1.1);
+  border-radius: 4px;
+  background-color: #5ed1d1;
+}
+
+.contact-main-container .contact-left, .contact-right {
+text-align: initial;
+margin-top: 85px;
+}
+
+.contact-main-container img {
+  width: 100px;
+}
+
+
+
+/*---------------Estos son los estilos de blogpost---------------*/
