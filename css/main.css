@@ -53,10 +53,16 @@ header .header-icons-container .icons {
 header .icons span {
   color: white;
 }
+
+header .icons span:hover {
+  color: #e6e9ed;
+}
+
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90px;
+  margin-top: 50px;
 }
 
 .nav-home {
@@ -150,7 +156,10 @@ main .buttom-hero button a {
 .blogs-main {
   display: grid;
 }
-
+.position {
+  position: fixed;
+  top: 0;
+}
 .blogs-news-container {
   background-color: #e6e9ed;
   padding: 0 50px 40px;
